@@ -109,16 +109,16 @@
 <meta property="og:site_name" content="谷神&#39;s Blog">
 <meta property="og:description" content="准备环境本人的系统环境是win10，根据经验来看，linux同样适用。 PS: 用hexo搭建博客的整体流程：首先利用hexo和markdown文件生成静态网页（public文件夹下），然后将静态网页同步到github的仓库。 node.js下载并安装 git下载并安装 Github Pages申请Github Pagesgithub网址如下：https://github.com/注册步骤不用详述">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://python5566.top/buildbolg/0.jpg">
-<meta property="og:image" content="http://python5566.top/buildbolg/1.jpg">
-<meta property="og:image" content="http://python5566.top/buildbolg/2.jpg">
-<meta property="og:image" content="http://python5566.top/2018/10/22/buildblog/buildbolg/3.jpg">
-<meta property="og:image" content="http://python5566.top/buildbolg/4.jpg">
-<meta property="og:updated_time" content="2018-10-22T06:56:58.003Z">
+<meta property="og:image" content="http://python5566.top/buildblog/0.jpg">
+<meta property="og:image" content="http://python5566.top/buildblog/1.jpg">
+<meta property="og:image" content="http://python5566.top/buildblog/2.jpg">
+<meta property="og:image" content="http://python5566.top/buildblog/3.jpg">
+<meta property="og:image" content="http://python5566.top/buildblog/4.jpg">
+<meta property="og:updated_time" content="2018-10-22T07:00:03.268Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="buildblog">
 <meta name="twitter:description" content="准备环境本人的系统环境是win10，根据经验来看，linux同样适用。 PS: 用hexo搭建博客的整体流程：首先利用hexo和markdown文件生成静态网页（public文件夹下），然后将静态网页同步到github的仓库。 node.js下载并安装 git下载并安装 Github Pages申请Github Pagesgithub网址如下：https://github.com/注册步骤不用详述">
-<meta name="twitter:image" content="http://python5566.top/buildbolg/0.jpg">
+<meta name="twitter:image" content="http://python5566.top/buildblog/0.jpg">
 
 
 
@@ -400,8 +400,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><img src="/buildbolg/0.jpg" alt=""></td>
-<td style="text-align:center"><img src="/buildbolg/1.jpg" alt=""></td>
+<td style="text-align:center"><img src="/buildblog/0.jpg" alt=""></td>
+<td style="text-align:center"><img src="/buildblog/1.jpg" alt=""></td>
 </tr>
 </tbody>
 </table>
@@ -411,11 +411,17 @@
 <ol>
 <li>打开阿里云官网（为个人安全，请百度官网）</li>
 <li>登录，进入右上角的控制台</li>
-<li>点击域名<br><img src="/buildbolg/2.jpg" alt=""></li>
-<li>进入域名解析<br><img src="/2018/10/22/buildblog/buildbolg/3.jpg" alt=""></li>
-<li>按照下图添加记录<br><img src="/buildbolg/4.jpg" alt=""><br>ps:可以只添加第一条和第三条，需要注意的是框里面的元素类型。第二条是将该域名解析到你github pages的ip地址，想要知道ip地址，可以在命令行或终端 输入：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping username.github.io</span><br></pre></td></tr></table></figure>
-</li>
+<li>点击域名</li>
 </ol>
+<p><img src="/buildblog/2.jpg" alt=""></p>
+<ol start="4">
+<li>进入域名解析</li>
+</ol>
+<p><img src="/buildblog/3.jpg" alt=""></p>
+<ol start="5">
+<li>按照下图添加记录</li>
+</ol>
+<p><img src="/buildblog/4.jpg" alt=""><br>ps:可以只添加第一条和第三条，需要注意的是框里面的元素类型。第二条是将该域名解析到你github pages的ip地址，想要知道ip地址，可以在命令行或终端 输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping username.github.io</span><br></pre></td></tr></table></figure></p>
 <h3 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a>配置SSH</h3><p>PS:这里推荐配置SSH，如果不想要配置SSH，可以用github desktop等工具手动同步你的仓库。配置ssh的目的是为了让写博客的客户端和github传输更安全，同时当利用hexo同步仓库的时候会更方便。</p>
 <p>win10可能自带ssh，如果没有，则需要自己安装，这里不再详述。<br>进入cmd之后：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd .ssh</span><br><span class="line">ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></p>
 <p>邮箱要换成你申请github的邮箱,执行完上述命令之后，会有一些选择，直接默认就可以。</p>
